@@ -10,7 +10,23 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Console\Commands;
+use Illuminate\Filesystem\Filesystem;
 
-Route::get('/', function () {
-    return view('welcome');
+
+
+Route::get('/dispatch/{times}', function( $times=1) {
+
+$this->dispatchFrom('app\Console\Commands\LoadCommand);
+
+
+
+
 });
+
+
+
+
+
+Auth::routes();
+
